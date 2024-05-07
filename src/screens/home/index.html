@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+    <!-- Include the Header section (adjust as needed based on your project's structure) -->
+    <div id="header">
+        <!-- You can include the contents of the Header component here, or a separate HTML file for the header -->
+        <div id="header" class="header">
+            <div class="left">
+                <img src="../../img/zimlogo.png" alt="logo" class="logo">
+                <div class="title">Туризм в Зимбабве</div>
+            </div>
+            <div class="right">
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/home/index.html" class="nav-item">Главная</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/information/index.html#" class="nav-item">Информация</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/vicfalls/index.html" class="nav-item">Виктория</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/greatzw/index.html" class="nav-item">Памятники</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/hwange/index.html" class="nav-item">Хванге</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/otherplaces/index.html" class="nav-item">Другие</a>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle scrolling for fixed header
+            const header = document.getElementById('header');
+    
+            function handleScroll() {
+                if (window.scrollY > 0) {
+                    header.classList.add('fixed');
+                    header.classList.add('bg-white');
+                    header.classList.add('full-width');
+                } else {
+                    header.classList.remove('fixed');
+                    header.classList.remove('bg-white');
+                    header.classList.remove('full-width');
+                }
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+        </script>
+    </div>
+
+    <div class="bg-image-container">
+        <div class="content">
+            <p class="description">
+                Туризм в Зимбабве предлагает уникальное сочетание природной красоты,
+                впечатлений от дикой природы, культурного погружения и приключенческих мероприятий,
+                что делает его привлекательным местом для путешественников, ищущих подлинный африканский опыт.
+            </p>
+            <div class="info-button">
+                Информация
+            </div>
+        </div>
+    </div>
+</body>
+</html>

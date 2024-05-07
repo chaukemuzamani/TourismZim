@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Водопад Виктория</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- You can include the contents of the Header component here, or a separate HTML file for the header -->
+        <div id="header" class="header">
+            <div class="left">
+                <img src="../../img/zimlogo.png" alt="logo" class="logo">
+                <div class="title">Туризм в Зимбабве</div>
+            </div>
+            <div class="right">
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/home/index.html" class="nav-item">Главная</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/information/index.html#" class="nav-item">Информация</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/vicfalls/index.html" class="nav-item">Виктория</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/greatzw/index.html" class="nav-item">Памятники</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/hwange/index.html" class="nav-item">Хванге</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/otherplaces/index.html" class="nav-item">Другие</a>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle scrolling for fixed header
+            const header = document.getElementById('header');
+    
+            function handleScroll() {
+                if (window.scrollY > 0) {
+                    header.classList.add('fixed');
+                    header.classList.add('bg-white');
+                    header.classList.add('full-width');
+                } else {
+                    header.classList.remove('fixed');
+                    header.classList.remove('bg-white');
+                    header.classList.remove('full-width');
+                }
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+        </script>
+    </div>
+    <div class="container mx-48">
+        <div class="title text-3xl font-bold">Водопад Виктория</div>
+        <div class="image-row flex flex-row justify-between mt-8">
+            <img src="../../img/Vic1.1.png" alt="photo_news" class="image w-[500px] h-[393px]" />
+            <img src="../../img/Vic1.2.png" alt="photo_news" class="image w-[500px] h-[393px]" />
+        </div>
+        <div class="content text-lg font-md">
+            <div class="mt-4">
+                Водопад Виктория является одной из самых знаковых туристических достопримечательностей
+                Зимбабве и объектом Всемирного наследия ЮНЕСКО. Водопад Виктория, расположенный на реке Замбези на границе
+                Зимбабве и Замбии, известен своими впечатляющими размерами и красотой, что делает его одним из крупнейших водопадов в мире.
+            </div>
+            <div class="my-4">
+                Посетители водопада Виктория могут заняться различными видами активного отдыха, включая экскурсии
+                с гидом по водопаду, живописные полеты на вертолете, банджи-джампинг, рафтинг
+                по реке Замбези, круизы на закате и сафари по дикой природе в близлежащих национальных парках.
+            </div>
+            <div>
+                Водопад Виктория обладает хорошо развитой туристической инфраструктурой, предлагающей широкий выбор вариантов
+                размещения, ресторанов, сувенирных лавок и туроператоров для обслуживания посетителей.
+            </div>
+            <div class="mt-4">
+                В целом, водопад Виктория в Зимбабве является обязательным местом для посещения путешественниками,
+                ищущими красоты природы, приключений и незабываемых впечатлений в Африке. Водопад Виктория 
+                с его потрясающими пейзажами, богатой дикой природой и культурным
+                наследием предлагает посетителям со всего мира уникальные и незабываемые впечатления от путешествий.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

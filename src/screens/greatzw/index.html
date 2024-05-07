@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Great Zimbabwe Monuments</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+    <div id="header">
+        <!-- You can include the contents of the Header component here, or a separate HTML file for the header -->
+        <div id="header" class="header">
+            <div class="left">
+                <img src="../../img/zimlogo.png" alt="logo" class="logo">
+                <div class="title">Туризм в Зимбабве</div>
+            </div>
+            <div class="right">
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/home/index.html" class="nav-item">Главная</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/information/index.html#" class="nav-item">Информация</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/vicfalls/index.html" class="nav-item">Виктория</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/greatzw/index.html" class="nav-item">Памятники</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/hwange/index.html" class="nav-item">Хванге</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/otherplaces/index.html" class="nav-item">Другие</a>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle scrolling for fixed header
+            const header = document.getElementById('header');
+    
+            function handleScroll() {
+                if (window.scrollY > 0) {
+                    header.classList.add('fixed');
+                    header.classList.add('bg-white');
+                    header.classList.add('full-width');
+                } else {
+                    header.classList.remove('fixed');
+                    header.classList.remove('bg-white');
+                    header.classList.remove('full-width');
+                }
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+        </script>
+    </div>
+    <div class="container">
+        <h1 class="title">Великие памятники Зимбабве</h1>
+        <div class="images">
+            <img src="../../img/Great1.1.png" alt="Great Ruins of Zimbabwe" class="image"/>
+            <img src="../../img/Great2.png" alt="Great Ruins of Zimbabwe" class="image"/>
+        </div>
+        <div class="content">
+            <p class="text">
+                Великие руины Зимбабве - это культовый археологический объект,
+                расположенный на юго-востоке Зимбабве, недалеко от города Масвинго. 
+                Эти руины являются объектом Всемирного наследия ЮНЕСКО и славятся своим 
+                историческим значением, архитектурным величием и культурным наследием.
+            </p>
+            <p class="text">
+                Считается, что Великие руины Зимбабве были построены предками
+                народа шона между 11 и 15 веками. Это место служило столицей Королевства 
+                Зимбабве, крупной торговой империи, которая контролировала торговые пути в Южной Африке.
+            </p>
+            <p class="text">
+                Самой поразительной особенностью Великих руин Зимбабве являются
+                массивные каменные сооружения, в том числе Большое ограждение,
+                комплекс Холмов и комплекс долин. Эти сооружения были построены с 
+                использованием технологии, известной как возведение стен из сухого камня,
+                когда камни укладываются друг на друга без раствора.
+            </p>
+            <p class="text">
+                Великие руины Зимбабве являются свидетельством богатой истории и 
+                культурного наследия Зимбабве и являются обязательным местом для 
+                посещения путешественниками, интересующимися археологией, историей и культурой Африки. 
+                Впечатляющая архитектура, историческое значение и живописная красота 
+                этого места делают его уникальным и увлекательным местом для изучения на Юге Африки.
+                Для ознакомления с историей и архитектурой руин организуются экскурсии с гидом.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

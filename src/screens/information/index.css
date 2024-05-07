@@ -1,0 +1,39 @@
+/* Define some base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 12rem;
+}
+
+/* Styling for title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Styling for content */
+.content {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: medium; /* Equivalent to font-md */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Margin top style */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+/* Margin bottom and top style */
+.my-4 {
+    margin: 1rem 0;
+}

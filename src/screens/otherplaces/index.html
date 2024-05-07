@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еще больше интересных мест</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- You can include the contents of the Header component here, or a separate HTML file for the header -->
+        <div id="header" class="header">
+            <div class="left">
+                <img src="../../img/zimlogo.png" alt="logo" class="logo">
+                <div class="title">Туризм в Зимбабве</div>
+            </div>
+            <div class="right">
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/home/index.html" class="nav-item">Главная</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/information/index.html#" class="nav-item">Информация</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/vicfalls/index.html" class="nav-item">Виктория</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/greatzw/index.html" class="nav-item">Памятники</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/hwange/index.html" class="nav-item">Хванге</a>
+                <a href="http://127.0.0.1:5500/TourismZim/src/screens/otherplaces/index.html" class="nav-item">Другие</a>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle scrolling for fixed header
+            const header = document.getElementById('header');
+    
+            function handleScroll() {
+                if (window.scrollY > 0) {
+                    header.classList.add('fixed');
+                    header.classList.add('bg-white');
+                    header.classList.add('full-width');
+                } else {
+                    header.classList.remove('fixed');
+                    header.classList.remove('bg-white');
+                    header.classList.remove('full-width');
+                }
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+        </script>
+    </div>
+    <div class="container mx-48">
+        <div class="title text-3xl font-bold">Еще больше интересных мест</div>
+        <div class="image-row flex flex-row justify-between mt-8">
+            <img src="../../img/Kariba dam wall.png" alt="photo_news" class="image w-[500px] h-[393px]" />
+            <img src="../../img/Chinhoyi Caves, Zimbabwe.png" alt="photo_news" class="image w-[500px] h-[393px]" />
+        </div>
+        <div class="image-row flex flex-row justify-between mt-12">
+            <img src="../../img/chimani_mani2.jpg" alt="photo_news" class="image w-[500px] h-[393px]" />
+            <img src="../../img/Nyanga.png" alt="photo_news" class="image w-[500px] h-[393px]" />
+        </div>
+    </div>
+</body>
+
+</html>

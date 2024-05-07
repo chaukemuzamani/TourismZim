@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О туризме в Зимбабве</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<div id="header">
+    <!-- You can include the contents of the Header component here, or a separate HTML file for the header -->
+    <div id="header" class="header">
+        <div class="left">
+            <img src="../../img/zimlogo.png" alt="logo" class="logo">
+            <div class="title">Туризм в Зимбабве</div>
+        </div>
+        <div class="right">
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/home/index.html" class="nav-item">Главная</a>
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/information/index.html#" class="nav-item">Информация</a>
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/vicfalls/index.html" class="nav-item">Виктория</a>
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/greatzw/index.html" class="nav-item">Памятники</a>
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/hwange/index.html" class="nav-item">Хванге</a>
+            <a href="http://127.0.0.1:5500/TourismZim/src/screens/otherplaces/index.html" class="nav-item">Другие</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle scrolling for fixed header
+        const header = document.getElementById('header');
+
+        function handleScroll() {
+            if (window.scrollY > 0) {
+                header.classList.add('fixed');
+                header.classList.add('bg-white');
+                header.classList.add('full-width');
+            } else {
+                header.classList.remove('fixed');
+                header.classList.remove('bg-white');
+                header.classList.remove('full-width');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</div>
+
+<body>
+    <div class="container mx-48 flex justify-evenly flex-col my-12">
+        <div class="title text-3xl font-bold">О туризме в Зимбабве</div>
+        <div class="content flex flex-col justify-evenly text-lg font-md">
+            <div class="mt-4">
+                Зимбабве может похвастаться широким спектром достопримечательностей,
+                которые привлекают самых разных путешественников, включая любителей дикой природы, искателей
+                приключений, любителей истории и исследователей культуры. В Зимбабве найдется что-то для каждого - от национальных
+                парков и охотничьих заповедников до исторических мест и живописных ландшафтов.
+            </div>
+            <div class="my-4">
+                Национальные парки и заповедники дикой природы страны управляются таким образом, чтобы обеспечить сохранение исчезающих видов и экосистем, обеспечивая устойчивую окружающую среду как
+                для дикой природы, так и для посетителей.
+            </div>
+            <div>
+                Зимбабве обладает хорошо развитой туристической инфраструктурой,
+                предлагающей широкий выбор вариантов размещения, транспортных услуг, туроператоров
+                и туристических объектов, доступных для удовлетворения потребностей
+                посетителей.
+            </div>
+            <div class="my-4">
+                Культурное наследие Зимбабве привлекает туристов,
+                заинтересованных в изучении истории, традиций и образа жизни страны.
+                Местные сообщества активно участвуют в инициативах по культурному туризму, предлагая аутентичные впечатления, демонстрирующие
+                их обычаи, искусство, ремесла и ритуалы.
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,47 @@
+/* Define base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    margin: 0 12rem;
+}
+
+/* Styling for title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Image row styles */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Image styles */
+.image {
+    width: 500px;
+    height: 393px;
+}
+
+/* Content section styles */
+.content {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: medium; /* Equivalent to font-md */
+    margin-top: 1rem;
+}
+
+/* Margin top styles */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+/* Margin top and bottom styles */
+.my-4 {
+    margin: 1rem 0;
+}

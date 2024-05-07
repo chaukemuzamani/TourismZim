@@ -1,0 +1,92 @@
+/* Styling the container */
+.container {
+    margin: 3rem 12rem;
+}
+
+/* Styling the title */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Styling the images */
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* Styling the individual images */
+.image {
+    width: 500px;
+    height: 393px;
+}
+
+/* Styling the content paragraphs */
+.content .text {
+    font-size: 1.125rem;
+    margin: 1rem 0;
+}
+
+/*header*/
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 192px;
+    transition: background-color 0.3s, width 0.3s;
+}
+
+/* Left section (logo and title) */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    margin-right: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Right section (navigation) */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 16px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for the fixed header */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.full-width {
+    width: 100%;
+}
