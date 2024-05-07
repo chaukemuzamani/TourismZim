@@ -5,7 +5,7 @@ import VictoriaFalls from './screens/VictoriaFalls';
 import GreatZimbabwe from './screens/GreatZimbabwe';
 import MorePlaces from './screens/MorePlaces';
 import Hwange from './screens/Hwange'
-import Footer from './componets /Footer';
+import Footer from './screens/Footer';
 
 
 function App() {

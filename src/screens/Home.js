@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../componets /Header";
+import Header from "./Header";
 import ZimVicFalls from "../img/victoriafalls.png"
 
 const Home = () => {
